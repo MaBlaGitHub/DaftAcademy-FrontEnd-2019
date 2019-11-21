@@ -135,21 +135,21 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
    font-weight: 700;
    color: #ef008e;
    letter-spacing: 6.7px;
-   opacity: 0.8;
+   opacity: .8;
 }
 
 .page-navigation__item > a:visited {
     font-size: 13px;
     font-weight: 700;
     color: #ef008e;
-    opacity: 0.1;
+    opacity: .1;
 }
 
 .page-navigation__item > a:hover {
     font-size: 13px;
     font-weight: 700;
     color: #ef008e;
-    opacity: 1.0;
+    opacity: 1;
 
 }
 
@@ -158,7 +158,7 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
     font-size: 13px;
     font-weight: 700;
     color: #ef008e;
-    opacity: 0.6;
+    opacity: .6;
     
 }
 
@@ -170,10 +170,38 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 }
 
 .band-members__image{
-    opacity: 0.5;
+    opacity: .5;
 }
 
-.band-members__image:hover {
-    opacity: 1.0;
+.band-members__image--hover:hover {
+    opacity: 1;
 }
+
+.hidden {
+    opacity: 0;
+}
+
+.band-members__image--hover:hover ~ .hidden {
+    opacity: 1;
+    text-align: left;
+    color: #DBD8FB;
+    font-weight: 700;
+}
+
+/*footer styles*/
+.social-links__icon {
+    opacity: .8;
+}
+
+.social-links__icon--modified:hover {
+    opacity: 1;
+}
+
+.social-links__icon--modified:visited {
+    opacity: .6;
+}
+
+
+
+
 
