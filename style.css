@@ -408,6 +408,7 @@ iframe {
     border-radius: 2px;
     padding: 8px;
     font-size: 13px;
+    outline: none;
 }
 
 .form__button {
