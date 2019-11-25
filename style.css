@@ -135,7 +135,12 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 
 /*navigation*/
 
+.page-navigation {
+    margin-top: 10px;
+}
+
 .page-navigation__item {
+    text-transform: uppercase;
     line-height: 25px;
 }
 
@@ -291,7 +296,37 @@ img.about-section__band-image {
     right: 0;
 }
 
+.button {
+    background:rgba(204, 200, 255, 0.1);
+    color: #DBD8FB;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    padding: 8px 11px;
+    border-radius: 3px;
+    opacity: .8;
+    border: none;
+    outline: none;
+}
+
+.button:hover {
+    background:  rgba(255, 255, 255, 0.2);
+}
+
+.button:active {
+    background:  rgba(255, 255, 255, 0.2);
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    border: 1px solid rgba(255, 255, 255, .8);
+}
+
+.button:focus {
+    border: 1px solid rgba(255, 255, 255, .8);
+}
+
 /*video section*/
+
 #video {
     margin-top: 50px;
 }
@@ -389,38 +424,26 @@ iframe {
     float: left;
 }
 
-.button {
-    background:rgba(204, 200, 255, 0.1);
-    color: #DBD8FB;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 1.6;
-    text-transform: uppercase;
-    padding: 8px 11px;
-    border-radius: 3px;
-    border: 1px solid rgba(255, 255, 255, 0)
-}
-
-.button:hover {
-    background:  rgba(255, 255, 255, 0.2);
-}
-
-.button:active {
-    font-family: Helvetica, sans-serif;
-    font-size: 12px;
-    border: 1px solid #DBD8FB;
-}
-
 /*footer styles*/
 .social-links__icon {
     width: 30px;
     opacity: .8;
 }
 
-.social-links__icon--modified:hover {
+.social-links__link:link {
+    opacity: .8;
+}
+
+.social-links__link:visited {
+    opacity: .1;
+}
+
+.social-links__link:active {
+    opacity: .6;
+}
+
+.social-links__link:hover,
+.social-links__link:focus {
     opacity: 1;
 }
 
-.social-links__icon--modified:visited {
-    opacity: .6;
-}
