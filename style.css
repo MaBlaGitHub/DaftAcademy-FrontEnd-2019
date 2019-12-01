@@ -66,6 +66,19 @@ body {
     }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative
+    }
+
+    .content-section {
+        max-width: 100%;
+    }
+}
 
 h1, h2, h3 {
     margin: 0;
@@ -228,6 +241,13 @@ Natomiast pozycję tę ustawiamy za pomocą parametrów 'top', 'bottom', 'right'
     } 
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+    .page-brand > img {
+        width: 100px;
+    }
+}
+
+
 /*
 Lewy margines ustawiony na kontenerze z główną zawartością strony sprawia,
 że nie będzie ona nachodzić na nagłówek i stopkę niezależnie od pozycji paska przewijania.
@@ -319,6 +339,30 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
     font-family: Helvetica, sans-serif;
     letter-spacing: 6.5px;
     opacity: .6;
+}
+
+/*media queries - navigation section*/
+@media (min-width: 769px) and (max-width: 1024px) {
+    .page-navigation__item > a:link {
+        font-size: .60rem;
+        letter-spacing: .1rem;
+    }
+
+    .page-navigation__item > a:visited {
+        color: #ef008e;
+        opacity: .1;
+    }
+    
+    .page-navigation__item > a:hover {
+        opacity: 1;
+    
+    }
+    
+    .page-navigation__item > a:active {
+        font-family: Helvetica, sans-serif;
+        letter-spacing: .60rem;
+        opacity: .6;
+    }
 }
 
 /*band members section*/
@@ -449,6 +493,23 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
     .band-members__item > .band-members__desc {
         text-align: center;
         opacity: .5;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .band-members {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: .7rem;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+    }
+
+    .band-members__image {
+        margin-top: 20px;
+        width: 100px;
     }
 }
 
@@ -587,6 +648,88 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
         height: 300px;
     }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .about {
+        position: relative;
+    }
+
+    .about-section__band-image {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .about-section__desc-header {
+        font-size: .60rem;
+    }
+    
+    .about-section__desc {
+        position: absolute;
+        top: 160px;
+        left: -130px;
+        width: 280px;
+        height: 220px;
+        background: #25072E;
+        font-size: .5rem;
+        letter-spacing: 1.5px;
+        color: #DBD8FB;
+        text-align: justify;
+        border-bottom: 3px solid #ef008e;
+        z-index: 1;
+    }
+}
+
+@media (min-width: 880px) and (max-width: 1024px) {
+    .about-section__desc {
+        position: absolute;
+        top: 160px;
+        left: -130px;
+        width: 280px;
+        height: 220px;
+        background: #25072E;
+        font-size: .5rem;
+        letter-spacing: 1.5px;
+        color: #DBD8FB;
+        text-align: justify;
+        border-bottom: 3px solid #ef008e;
+        z-index: 1;
+    }
+}
+
+@media (min-width: 940px) and (max-width: 1024px) {
+    .about-section__desc {
+        position: absolute;
+        top: 160px;
+        left: -90px;
+        width: 280px;
+        height: 220px;
+        background: #25072E;
+        font-size: .5rem;
+        letter-spacing: 1.5px;
+        color: #DBD8FB;
+        text-align: justify;
+        border-bottom: 3px solid #ef008e;
+        z-index: 1;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1024px) {
+    .about-section__desc {
+        position: absolute;
+        top: 160px;
+        left: -40px;
+        width: 280px;
+        height: 220px;
+        background: #25072E;
+        font-size: .5rem;
+        letter-spacing: 1.5px;
+        color: #DBD8FB;
+        text-align: justify;
+        border-bottom: 3px solid #ef008e;
+        z-index: 1;
+    }
+}
+
 
 /*concerts section*/
 .concerts {
@@ -759,6 +902,85 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
     }
 }
 
+@media (min-width: 769px) and (max-width: 868px) {
+    .concerts {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(240px, auto));
+        grid-template-rows: repeat(2, minmax(240px, auto));
+        justify-content: end;
+    }
+
+    .concerts__image {
+        width: 240px;
+        border-bottom: 3px solid #ef008e;
+    }
+
+    .concerts__date,
+    .concerts__location {
+        margin:0;
+        padding:0;
+        text-align: left;
+        font-size: .5rem;;
+        font-weight: 400;
+        color: #DBD8FB;
+        letter-spacing: .1rem;
+    }
+
+    .button {
+        background:rgba(204, 200, 255, 0.1);
+        color: #DBD8FB;
+        font-size: .5rem;
+        font-weight: 600;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        padding: 8px 11px;
+        border-radius: 3px;
+        opacity: .8;
+        border: none;
+        outline: none;
+    }
+
+}
+
+@media (min-width: 869px) and (max-width: 1024px) {
+    .concerts {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(280px, auto));
+        grid-template-rows: repeat(2, minmax(280px, auto));
+        justify-content: end;
+    }
+
+    .concerts__image {
+        width: 280px;
+        border-bottom: 3px solid #ef008e;
+    }
+
+    .concerts__date,
+    .concerts__location {
+        margin:0;
+        padding:0;
+        text-align: left;
+        font-size: .7rem;;
+        font-weight: 400;
+        color: #DBD8FB;
+        letter-spacing: .1rem;
+    }
+
+    .button {
+        background:rgba(204, 200, 255, 0.1);
+        color: #DBD8FB;
+        font-size: .7rem;
+        font-weight: 600;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        padding: 8px 11px;
+        border-radius: 3px;
+        opacity: .8;
+        border: none;
+        outline: none;
+    }
+}
+
 /*video section*/
 #video {
     margin-top: 50px;
@@ -809,6 +1031,22 @@ iframe {
         height: 300px;
     }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #video {
+        display: flex;
+        flex-flow: column;
+        justify-items: end;
+        margin-top: 50px;
+    }
+    
+    iframe {
+        width: auto;
+        height: 300px;
+        border-top: 3px solid #ef008e;
+    }
+}
+
 
 /*gallery section*/
 .gallery {
@@ -910,6 +1148,46 @@ iframe {
 
     .gallery__image {
         width: 500px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 868px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(150px, 300px));
+        justify-content: end;
+        margin-left: 20px;
+        grid-gap: 10px;
+    }
+    
+    .gallery__image {
+        width: 150px;
+        border-top: 3px solid #ef008e;
+        margin: 0;
+    }
+
+    .content-section__header {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 869px) and (max-width: 1024px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 300px));
+        justify-content: end;
+        margin-left: 20px;
+        grid-gap: 10px;
+    }
+    
+    .gallery__image {
+        width: 200px;
+        border-top: 3px solid #ef008e;
+        margin: 0;
+    }
+
+    .content-section__header {
+        margin-right: 0;
     }
 }
 
@@ -1096,6 +1374,153 @@ iframe {
 
 }
 
+@media (min-width: 769px) and (max-width: 868px) {
+    #contact {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 250px));
+        grid-template-rows: repeat(3, 150px);
+        justify-content: end;
+    }
+    
+    .content-section__header {
+        grid-row: 1 / 1;
+        grid-column: 4 / 4;
+    }
+    
+    .gallery__image.band__image {
+        border-top: none;
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+        width: 240px;
+        margin-left: 20px;
+    }
+    
+    .contact__address {
+        grid-column: 4 / 4;
+        grid-row: 1 / 4;
+        align-self: center;
+        justify-content: end;
+        font-style: normal;
+        font-size: .6rem;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        color: #DBD8FB;
+        opacity: 0.8;
+    }
+    
+    .form {
+        margin-top: 30px;
+        grid-column: 2 / 2;
+        grid-row: 3/ 3;
+        margin-left: 20px;
+    }
+    
+    .form__label {
+        font-size: .6rem;
+        font-weight: 600;
+        color: #DBD8FB;
+        letter-spacing: .1rem;
+        margin-top: 10px;
+        float: left;
+        opacity: 0.8
+    }
+    
+    .form__input {
+        margin-top: 10px;
+        width: 240px;
+        background:rgba(204, 200, 255, 0.1);
+        border: none;    
+        border-radius: 2px;
+        padding: 8px;
+        font-size: 13px;
+        outline: none;
+    }
+    
+    .form__label:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
+    .form__button {
+        margin-top: 20px;
+        float: left;
+    }
+}
+
+@media (min-width: 869px) and (max-width: 1024px) {
+    #contact {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(240px, 260px));
+        grid-template-rows: repeat(3, 150px);
+        justify-content: end;
+    }
+    
+    .content-section__header {
+        grid-row: 1 / 1;
+        grid-column: 4 / 4;
+    }
+    
+    .gallery__image.band__image {
+        border-top: none;
+        grid-column: 2 / 3;
+        grid-row: 2 / 2;
+        width: 350px;
+    }
+    
+    .contact__address {
+        grid-column: 4 / 4;
+        grid-row: 1 / 4;
+        align-self: center;
+        justify-content: end;
+        font-style: normal;
+        margin-top: 70px;
+        font-size: .7rem;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        color: #DBD8FB;
+        opacity: 0.8;
+    }
+    
+    .form {
+        grid-column: 2 / 2;
+        grid-row: 3 / 3;
+        margin-top: 100px;
+    }
+    
+    .form__label {
+        font-size: .6rem;
+        font-weight: 600;
+        color: #DBD8FB;
+        letter-spacing: .1rem;
+        margin-top: 10px;
+        float: left;
+        opacity: 0.8
+    }
+    
+    .form__input {
+        margin-top: 10px;
+        width: 350px;
+        background:rgba(204, 200, 255, 0.1);
+        border: none;    
+        border-radius: 2px;
+        padding: 8px;
+        font-size: 13px;
+        outline: none;
+    }
+    
+    .form__label:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
+    .form__button {
+        margin-top: 20px;
+        float: left;
+    }
+}
+
 /*footer styles*/
 .social-links__icon {
     width: 30px;
@@ -1153,5 +1578,12 @@ iframe {
         display: flex;
         justify-content: space-around;
         
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .social-links__icon {
+        width: 20px;
+        opacity: .8;
     }
 }
