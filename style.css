@@ -38,6 +38,34 @@ body {
     }
 }
 
+@media (min-width: 376px) and (max-width: 599px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative
+    }
+
+    .content-section {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative
+    }
+
+    .content-section {
+        max-width: 100%;
+    }
+}
+
 
 h1, h2, h3 {
     margin: 0;
@@ -55,6 +83,18 @@ h2 {
     h2 {
         font-size: .75rem;
     } 
+}
+
+@media (min-width: 376px) and (max-width: 699px) {
+    h2 {
+        font-size: .75rem;
+    } 
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    h2 {
+        font-size: .75rem;
+    }    
 }
 
 ul {
@@ -145,6 +185,49 @@ Natomiast pozycję tę ustawiamy za pomocą parametrów 'top', 'bottom', 'right'
     }
 }
 
+@media (min-width: 376px) and (max-width: 599px) {
+    .page-header {
+        position: static;
+        width: 100%;
+        margin: 30px auto 30px auto;
+    }
+
+    .page-brand {
+        width: 160px;
+        margin: 0 auto;
+    }
+
+    .page-navigation__item {
+        text-align: center;
+    }
+
+    .page-footer {
+        position: static;
+    } 
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .page-header {
+        position: static;
+        min-width: 600px;
+        margin: 40px auto 40px auto;
+    }
+
+    .page-brand {
+        width: 160px;
+        margin: 0 auto;
+    }
+
+    .page-navigation__items {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .page-footer {
+        position: static;
+    } 
+}
+
 /*
 Lewy margines ustawiony na kontenerze z główną zawartością strony sprawia,
 że nie będzie ona nachodzić na nagłówek i stopkę niezależnie od pozycji paska przewijania.
@@ -169,6 +252,23 @@ Właściwość "text-align: right" przykleja zawartość do prawej strony
         text-align: center;
     }
 }
+
+@media (min-width: 376px) and (max-width: 599px) {
+    .page-content {
+        margin-left: 0;
+        padding: 0;
+        text-align: center;
+    } 
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .page-content {
+        margin-left: 0;
+        padding: 0;
+        text-align: center;
+    }
+}
+    
 
 
 /*
@@ -284,6 +384,74 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
     }
 }
 
+@media (min-width: 376px) and (max-width: 599px) {
+    .band-members {
+        display: block;
+        width: auto;
+        font-size: .75rem;
+    }
+
+    .band-members__item {
+        width: 160px;
+        margin: 0 auto
+    }
+
+    .band-members__image {
+        margin-top: 20px;
+        width: 160px;
+    }
+    
+    .band-members__item > .band-members__name {
+        text-align: center;
+        opacity: 1;
+    } 
+    
+    .band-members__item > .band-members__desc {
+        text-align: center;
+        opacity: .5;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 599px) {
+    .band-members__item {
+        width: 200px;
+        margin: 0 auto
+    }
+
+    .band-members__image {
+        margin-top: 20px;
+        width: 200px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .band-members {
+        display: block;
+        width: auto;
+        font-size: .75rem;
+    }
+
+    .band-members__item {
+        width: 250px;
+        margin: 0 auto
+    }
+
+    .band-members__image {
+        margin-top: 20px;
+        width: 250px;
+    }
+
+    .band-members__item > .band-members__name {
+        text-align: center;
+        opacity: 1;
+    } 
+    
+    .band-members__item > .band-members__desc {
+        text-align: center;
+        opacity: .5;
+    }
+}
+
 
 /* about section*/
 .about {
@@ -348,6 +516,74 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
         display: block;
         margin: 0 auto;
         width: 300px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 599px) {
+    #about {
+        margin-top: 630px;
+    }
+
+    .about {
+        position: static;
+        display: block;
+        width: auto;
+    }
+
+    .about-section__band-image {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .about-section__desc-header {
+        font-size: .75rem;
+    }
+
+    .about-section__desc-details {
+        font-size: .65rem;
+    }
+
+    .about-section__desc {
+        position: static;
+        display: block;
+        margin: 0 auto;
+        width: 350px;
+        height: 270px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 599px) {
+    #about {
+        margin-top: 860px;
+    }
+
+    .about-section__band-image {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .about-section__desc {
+        width: 400px;
+        height: 270px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    #about {
+        margin-top: 1120px;
+    }
+
+    .about-section__band-image {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .about-section__desc {
+        position: static;
+        display: block;
+        margin: 0 auto;
+        width: 500px;
         height: 300px;
     }
 }
@@ -452,6 +688,77 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
     }
 }
 
+@media (min-width: 376px) and (max-width: 599px) {
+    #concerts {
+        margin-top: 60px;
+    }
+
+    .concerts {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .concerts__image {
+        max-width: 350px;
+        margin-bottom: 5px;
+    }
+
+    .concerts__date,
+    .concerts__location  {
+        font-size: .60rem;
+    }
+
+    .concerts__info {
+        margin-bottom: 15px;
+    }
+
+    .button {
+        font-size: .60rem;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 599px) {
+    #concerts {
+        margin-top: 60px;
+    }
+
+    .concerts__image {
+        max-width: 400px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    #concerts {
+        margin-top: 60px;
+    }
+
+    .concerts {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .concerts__image {
+        min-width: 500px;
+        margin-bottom: 5px;
+    }
+
+    .concerts__date,
+    .concerts__location  {
+        font-size: .60rem;
+    }
+
+    .concerts__info {
+        margin-bottom: 15px;
+    }
+
+    .button {
+        font-size: .60rem;
+    }
+}
+
 /*video section*/
 #video {
     margin-top: 50px;
@@ -471,6 +778,35 @@ iframe {
     #video > iframe {
         width: 300px;
         height: 200px;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 599px) {
+    .content-section {
+        min-height: 50vh;
+    }
+
+    #video > iframe {
+        width: 350px;
+        height: 200px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 599px) {
+    #video > iframe {
+        width: 400px;
+        height: 250px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .content-section {
+        min-height: 50vh;
+    }
+
+    #video > iframe {
+        width: 500px;
+        height: 300px;
     }
 }
 
@@ -526,6 +862,54 @@ iframe {
 
     .gallery__image {
         width: 300px;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 599px) {
+    .gallery {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .gallery__item {
+        margin-bottom: 10px;;
+    }
+
+    .gallery__image {
+        width: 350px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 599px) {
+    #photos {
+        margin-top: 40px;
+    }
+
+    .gallery__image {
+        width: 400px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    #photos {
+        margin-top: 40px;
+    }
+
+    .gallery {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .gallery__item {
+        margin-bottom: 10px;;
+    }
+
+    .gallery__image {
+        width: 500px;
     }
 }
 
@@ -635,6 +1019,83 @@ iframe {
     }
 }
 
+@media (min-width: 376px) and (max-width: 599px) {
+    #contact {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    #contact > .gallery__image {
+        width: 350px;
+    }
+
+    .contact__address {
+        display: flex;
+        margin-top: 40px;
+    }
+
+    .form {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .form__label {
+        display: block;
+        float: none;
+        text-align: left;
+    }
+
+    .form__input {
+        width: 350px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 599px) {
+    #contact > .gallery__image {
+        width: 400px;
+    }
+
+    .form__input {
+        width: 400px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    #contact {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    #contact > .gallery__image {
+        width: 500px;
+    }
+
+    .contact__address {
+        display: flex;
+        margin-top: 40px;
+    }
+
+    .form {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .form__label {
+        display: block;
+        float: none;
+        text-align: left;
+    }
+
+    .form__input {
+        width: 500px;
+    }
+
+}
+
 /*footer styles*/
 .social-links__icon {
     width: 30px;
@@ -660,6 +1121,30 @@ iframe {
 
 /*media-queries - footer section*/
 @media (min-width: 320px) and (max-width: 375px) {
+    .social-links {
+        margin: 50px 0;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+}
+
+@media (min-width: 376px) and (max-width: 599px) {
+    .social-links {
+        margin: 50px 0;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
     .social-links {
         margin: 50px 0;
     }
