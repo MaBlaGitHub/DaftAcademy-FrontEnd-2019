@@ -80,6 +80,20 @@ body {
     }
 }
 
+@media (min-width: 1025px) and (max-width: 1440px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative
+    }
+
+    .content-section {
+        max-width: 100%;
+    }
+}
+
 h1, h2, h3 {
     margin: 0;
 }
@@ -513,6 +527,23 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
     }
 }
 
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .band-members {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: .7rem;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+    }
+
+    .band-members__image {
+        margin-top: 20px;
+        width: 190px;
+    }
+}
+
 
 /* about section*/
 .about {
@@ -550,7 +581,7 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 /*media queries - about section*/
 @media (min-width: 320px) and (max-width: 375px) {
     #about {
-        margin-top: 650px;
+        margin-top: 690px;
     }
 
     .about {
@@ -583,7 +614,7 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 
 @media (min-width: 376px) and (max-width: 599px) {
     #about {
-        margin-top: 630px;
+        margin-top: 690px;
     }
 
     .about {
@@ -616,7 +647,7 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 
 @media (min-width: 500px) and (max-width: 599px) {
     #about {
-        margin-top: 860px;
+        margin-top: 930px;
     }
 
     .about-section__band-image {
@@ -632,7 +663,7 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 
 @media (min-width: 600px) and (max-width: 768px) {
     #about {
-        margin-top: 1120px;
+        margin-top: 1220px;
     }
 
     .about-section__band-image {
@@ -730,8 +761,71 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
     }
 }
 
+@media (min-width: 1025px) and (max-width: 1150px) {
+    .about {
+        position: relative;
+    }
+
+    .about-section__band-image {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .about-section__desc-header {
+        font-size: .60rem;
+    }
+    
+    .about-section__desc {
+        position: absolute;
+        top: 190px;
+        left: -130px;
+        width: 280px;
+        height: 220px;
+        background: #25072E;
+        font-size: .5rem;
+        letter-spacing: 1.5px;
+        color: #DBD8FB;
+        text-align: justify;
+        border-bottom: 3px solid #ef008e;
+        z-index: 1;
+    }
+}
+
+@media (min-width: 1151px) and (max-width: 1280px) {
+    .about {
+        position: relative;
+    }
+
+    .about-section__band-image {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .about-section__desc-header {
+        font-size: .60rem;
+    }
+    
+    .about-section__desc {
+        position: absolute;
+        top: 190px;
+        left: -70px;
+        width: 280px;
+        height: 220px;
+        background: #25072E;
+        font-size: .5rem;
+        letter-spacing: 1.5px;
+        color: #DBD8FB;
+        text-align: justify;
+        border-bottom: 3px solid #ef008e;
+        z-index: 1;
+    }
+}
 
 /*concerts section*/
+#concerts {
+    margin-top: 80px;
+}
+
 .concerts {
     display: grid;
     grid-template-columns: repeat(2, minmax(400px, auto));
@@ -981,52 +1075,123 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
     }
 }
 
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .concerts {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(280px, auto));
+        grid-template-rows: repeat(2, minmax(280px, auto));
+        justify-content: end;
+    }
+
+    .concerts__image {
+        width: 280px;
+        border-bottom: 3px solid #ef008e;
+    }
+
+    .concerts__date,
+    .concerts__location {
+        margin:0;
+        padding:0;
+        text-align: left;
+        font-size: .7rem;;
+        font-weight: 400;
+        color: #DBD8FB;
+        letter-spacing: .1rem;
+    }
+
+    .button {
+        background:rgba(204, 200, 255, 0.1);
+        color: #DBD8FB;
+        font-size: .7rem;
+        font-weight: 600;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        padding: 8px 11px;
+        border-radius: 3px;
+        opacity: .8;
+        border: none;
+        outline: none;
+    }
+}
+
 /*video section*/
 #video {
+    display: flex;
+    flex-flow: column; 
     margin-top: 50px;
 }
 
+
 iframe {
-    width: 940px;
+    width: auto;
+    height: 500px;
     border-top: 3px solid #ef008e;
 }
 
 /*media queries - video section*/
 @media (min-width: 320px) and (max-width: 375px) {
+    #video {
+        display: flex;
+        flex-flow: column;
+        margin-top: 50px;
+    }
+
     .content-section {
         min-height: 50vh;
     }
 
     #video > iframe {
-        width: 300px;
+        margin: 0 auto;
+        max-width: 300px;
         height: 200px;
     }
 }
 
 @media (min-width: 376px) and (max-width: 599px) {
+    #video {
+        display: flex;
+        flex-flow: column;
+        margin-top: 50px;
+    }
+
     .content-section {
         min-height: 50vh;
     }
 
     #video > iframe {
+        margin: 0 auto;
         width: 350px;
         height: 200px;
     }
 }
 
 @media (min-width: 500px) and (max-width: 599px) {
+    #video {
+        display: flex;
+        flex-flow: column;
+        margin-top: 50px;
+    }
+
     #video > iframe {
+        margin: 0 auto;
         width: 400px;
         height: 250px;
     }
 }
 
 @media (min-width: 600px) and (max-width: 768px) {
+    #video {
+        display: flex;
+        flex-flow: column;
+        margin-top: 50px;
+    }
+
     .content-section {
         min-height: 50vh;
     }
 
     #video > iframe {
+        margin: 0 auto;
         width: 500px;
         height: 300px;
     }
@@ -1039,6 +1204,10 @@ iframe {
         justify-items: end;
         margin-top: 50px;
     }
+
+    .content-section {
+        min-height: 50vh;
+    }
     
     iframe {
         width: auto;
@@ -1047,6 +1216,24 @@ iframe {
     }
 }
 
+@media (min-width: 1025px) and (max-width: 1280px) {
+    #video {
+        display: flex;
+        flex-flow: column;
+        justify-items: end;
+        margin-top: 50px;
+    }
+
+    .content-section {
+        min-height: 70vh;
+    }
+    
+    iframe {
+        width: auto;
+        height: 300px;
+        border-top: 3px solid #ef008e;
+    }
+}
 
 /*gallery section*/
 .gallery {
@@ -1068,7 +1255,7 @@ iframe {
 @supports (display: grid) {
     .gallery {
         display: grid;
-        grid-template-columns: repeat(3, minmax(250px, 300px));
+        grid-template-columns: repeat(3, minmax(300px, 300px));
         justify-content: end;
         margin-left: 20px;
         grid-gap: 10px;
@@ -1152,6 +1339,10 @@ iframe {
 }
 
 @media (min-width: 769px) and (max-width: 868px) {
+    #photos {
+        margin-top: 40px;
+    }
+
     .gallery {
         display: grid;
         grid-template-columns: repeat(3, minmax(150px, 300px));
@@ -1172,6 +1363,10 @@ iframe {
 }
 
 @media (min-width: 869px) and (max-width: 1024px) {
+    #photos {
+        margin-top: 40px;
+    }
+
     .gallery {
         display: grid;
         grid-template-columns: repeat(3, minmax(200px, 300px));
@@ -1191,12 +1386,35 @@ iframe {
     }
 }
 
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 300px));
+        justify-content: end;
+        margin-left: 20px;
+        grid-gap: 20px;
+    }
+    
+    .gallery__image {
+        width: 200px;
+        border-top: 3px solid #ef008e;
+        margin: 0;
+    }
+
+    .content-section__header {
+        margin-right: 0;
+    }
+}
+
 /*contact section*/
 #contact {
+    margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(3, minmax(250px, 275px));
     grid-template-rows: repeat(3, 150px);
     justify-content: end;
+    height: 100vh;
 }
 
 .content-section__header {
@@ -1380,6 +1598,7 @@ iframe {
         grid-template-columns: repeat(3, minmax(200px, 250px));
         grid-template-rows: repeat(3, 150px);
         justify-content: end;
+        height: 80vh;
     }
     
     .content-section__header {
@@ -1454,6 +1673,82 @@ iframe {
         grid-template-columns: repeat(3, minmax(240px, 260px));
         grid-template-rows: repeat(3, 150px);
         justify-content: end;
+        height: 90vh;
+    }
+    
+    .content-section__header {
+        grid-row: 1 / 1;
+        grid-column: 4 / 4;
+    }
+    
+    .gallery__image.band__image {
+        border-top: none;
+        grid-column: 2 / 3;
+        grid-row: 2 / 2;
+        width: 350px;
+    }
+    
+    .contact__address {
+        grid-column: 4 / 4;
+        grid-row: 1 / 4;
+        align-self: center;
+        justify-content: end;
+        font-style: normal;
+        margin-top: 70px;
+        font-size: .7rem;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        color: #DBD8FB;
+        opacity: 0.8;
+    }
+    
+    .form {
+        grid-column: 2 / 2;
+        grid-row: 3 / 3;
+        margin-top: 100px;
+    }
+    
+    .form__label {
+        font-size: .6rem;
+        font-weight: 600;
+        color: #DBD8FB;
+        letter-spacing: .1rem;
+        margin-top: 10px;
+        float: left;
+        opacity: 0.8
+    }
+    
+    .form__input {
+        margin-top: 10px;
+        width: 350px;
+        background:rgba(204, 200, 255, 0.1);
+        border: none;    
+        border-radius: 2px;
+        padding: 8px;
+        font-size: 13px;
+        outline: none;
+    }
+    
+    .form__label:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
+    .form__button {
+        margin-top: 20px;
+        float: left;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    #contact {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(240px, 260px));
+        grid-template-rows: repeat(3, 150px);
+        justify-content: end;
+        margin-top: 40px;
+        height: 90vh;
     }
     
     .content-section__header {
@@ -1582,6 +1877,7 @@ iframe {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+
     .social-links__icon {
         width: 20px;
         opacity: .8;
