@@ -24,7 +24,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-@media (max-width: 360px) {
+@media (min-width: 320px) and (max-width: 375px) {
     html, body {
         overflow-x: hidden;
     }
@@ -34,7 +34,7 @@ body {
     }
 
     .content-section {
-        max-width: 360px;
+        max-width: 100%;
     }
 }
 
@@ -50,10 +50,11 @@ h2 {
     letter-spacing: 3.8px;
 }
 
-@media (max-width: 360px) {
+
+@media (min-width: 320px) and (max-width: 375px) {
     h2 {
         font-size: .75rem;
-    }   
+    } 
 }
 
 ul {
@@ -122,10 +123,11 @@ Natomiast pozycję tę ustawiamy za pomocą parametrów 'top', 'bottom', 'right'
     left: 50px;
 }
 
-@media (max-width: 360px) {
+/*media queries - page header*/
+@media (min-width: 320px) and (max-width: 375px) {
     .page-header {
         position: static;
-        width: 360px;
+        width: 100%;
         margin: 30px auto 30px auto;
     }
 
@@ -159,14 +161,15 @@ Właściwość "text-align: right" przykleja zawartość do prawej strony
     padding: 0 10%;
     text-align: right;
 }
-
-@media (max-width: 360px) {
+/*media queries - page content*/
+@media (min-width: 320px) and (max-width: 375px) {
     .page-content {
         margin-left: 0;
         padding: 0;
         text-align: center;
     }
 }
+
 
 /*
 Projekt graficzny zakłada, że każda sekcja strony będzie wypełniać całą wysokość okna przeglądarki
@@ -253,16 +256,16 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 }
 
 /*media queries - band members section*/
-@media (max-width: 360px) {
+@media (min-width: 320px) and (max-width: 375px) {
     .band-members {
         display: block;
-        width: 360px;
+        width: auto;
         font-size: .75rem;
     }
 
     .band-members__item {
         width: 160px;
-        margin: 0 auto;
+        margin: 0 auto
     }
 
     .band-members__image {
@@ -316,16 +319,15 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 }
 
 /*media queries - about section*/
-@media (max-width: 360px) {
-
+@media (min-width: 320px) and (max-width: 375px) {
     #about {
-        margin-top: 690px;
+        margin-top: 650px;
     }
 
     .about {
         position: static;
         display: block;
-        width: 360px;
+        width: auto;
     }
 
     .about-section__band-image {
@@ -421,7 +423,7 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 }
 
 /*media queries - concerts section*/
-@media (max-width: 360px) {
+@media (min-width: 320px) and (max-width: 375px) {
     #concerts {
         margin-top: 50px;
     }
@@ -432,15 +434,23 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
     }
 
     .concerts__image {
-        width: 300px;
+        max-width: 300px;
         margin-bottom: 5px;
+    }
+
+    .concerts__date,
+    .concerts__location  {
+        font-size: .60rem;
     }
 
     .concerts__info {
         margin-bottom: 15px;
     }
 
-} 
+    .button {
+        font-size: .60rem;
+    }
+}
 
 /*video section*/
 #video {
@@ -453,7 +463,7 @@ iframe {
 }
 
 /*media queries - video section*/
-@media (max-width: 360px) {
+@media (min-width: 320px) and (max-width: 375px) {
     .content-section {
         min-height: 50vh;
     }
@@ -463,7 +473,6 @@ iframe {
         height: 200px;
     }
 }
-
 
 /*gallery section*/
 .gallery {
@@ -503,7 +512,7 @@ iframe {
 }
 
 /*media queries - gallery section*/
-@media (max-width: 360px) {
+@media (min-width: 320px) and (max-width: 375px) {
     .gallery {
         display: flex;
         flex-flow: column;
@@ -593,7 +602,7 @@ iframe {
 }
 
 /*media-queries - contact section*/
-@media (max-width: 360px) {
+@media (min-width: 320px) and (max-width: 375px) {
     #contact {
         display: flex;
         flex-flow: column;
@@ -626,8 +635,6 @@ iframe {
     }
 }
 
-
-
 /*footer styles*/
 .social-links__icon {
     width: 30px;
@@ -651,7 +658,8 @@ iframe {
     opacity: 1;
 }
 
-@media (max-width: 360px) {
+/*media-queries - footer section*/
+@media (min-width: 320px) and (max-width: 375px) {
     .social-links {
         margin: 50px 0;
     }
