@@ -581,7 +581,7 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 /*media queries - about section*/
 @media (min-width: 320px) and (max-width: 375px) {
     #about {
-        margin-top: 690px;
+        margin-top: 650px;
     }
 
     .about {
@@ -614,7 +614,7 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 
 @media (min-width: 376px) and (max-width: 599px) {
     #about {
-        margin-top: 690px;
+        margin-top: 670px;
     }
 
     .about {
@@ -647,7 +647,7 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 
 @media (min-width: 500px) and (max-width: 599px) {
     #about {
-        margin-top: 930px;
+        margin-top: 880px;
     }
 
     .about-section__band-image {
@@ -663,7 +663,7 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 
 @media (min-width: 600px) and (max-width: 768px) {
     #about {
-        margin-top: 1220px;
+        margin-top: 1200px;
     }
 
     .about-section__band-image {
@@ -778,7 +778,7 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
     .about-section__desc {
         position: absolute;
         top: 190px;
-        left: -130px;
+        left: -90px;
         width: 280px;
         height: 220px;
         background: #25072E;
@@ -859,7 +859,6 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 .concerts__location {
     opacity: .5;
 }
-
 
 .concerts__info > .button {
     position: absolute;
@@ -998,7 +997,7 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 
 @media (min-width: 769px) and (max-width: 868px) {
     #concerts {
-        margin-top: 170px;
+        margin-top: 200px;
     }
 
     .concerts {
@@ -1042,7 +1041,7 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 
 @media (min-width: 869px) and (max-width: 1024px) {
     #concerts {
-        margin-top: 170px;
+        margin-top: 210px;
     }
 
     .concerts {
@@ -1348,7 +1347,7 @@ iframe {
 
 @media (min-width: 769px) and (max-width: 868px) {
     #photos {
-        margin-top: 40px;
+        margin-top: 80px;
     }
 
     .gallery {
@@ -1372,7 +1371,7 @@ iframe {
 
 @media (min-width: 869px) and (max-width: 1024px) {
     #photos {
-        margin-top: 40px;
+        margin-top: 80px;
     }
 
     .gallery {
@@ -1602,6 +1601,7 @@ iframe {
 
 @media (min-width: 769px) and (max-width: 868px) {
     #contact {
+        margin-top: 80px;
         display: grid;
         grid-template-columns: repeat(3, minmax(200px, 250px));
         grid-template-rows: repeat(3, 150px);
@@ -1677,6 +1677,7 @@ iframe {
 
 @media (min-width: 869px) and (max-width: 1024px) {
     #contact {
+        margin-top: 80px;
         display: grid;
         grid-template-columns: repeat(3, minmax(240px, 260px));
         grid-template-rows: repeat(3, 150px);
