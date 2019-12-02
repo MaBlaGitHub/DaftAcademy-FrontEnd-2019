@@ -997,6 +997,10 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 }
 
 @media (min-width: 769px) and (max-width: 868px) {
+    #concerts {
+        margin-top: 170px;
+    }
+
     .concerts {
         display: grid;
         grid-template-columns: repeat(2, minmax(240px, auto));
@@ -1037,6 +1041,10 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 }
 
 @media (min-width: 869px) and (max-width: 1024px) {
+    #concerts {
+        margin-top: 170px;
+    }
+
     .concerts {
         display: grid;
         grid-template-columns: repeat(2, minmax(280px, auto));
@@ -1841,9 +1849,6 @@ iframe {
 
 /*media-queries - footer section*/
 @media (min-width: 320px) and (max-width: 375px) {
-    .social-links {
-        margin: 50px 0;
-    }
 
     .social-links {
         display: flex;
@@ -1853,6 +1858,7 @@ iframe {
 }
 
 @media (min-width: 376px) and (max-width: 599px) {
+ 
     .social-links {
         margin: 50px 0;
     }
@@ -1866,7 +1872,7 @@ iframe {
 
 @media (min-width: 600px) and (max-width: 768px) {
     .social-links {
-        margin: 50px 0;
+        margin: 90px 0;
     }
 
     .social-links {
