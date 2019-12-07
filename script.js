@@ -6,30 +6,41 @@ const hamburgerIcon = document.querySelector('.mobile-button');
 const pageHeader = document.querySelector('.page-navigation__items');
 const pageNavigationLink = document.querySelector('.page-navigation__items');
 
-function hideOrShowNavigation () {
-    if (window.innerWidth <= 375) {
-        console.log(window.innerWidth);
-        navigation.classList.add('page-navigation--hidden')
-    } else {
-        navigation.removeAttribute('style');
-    }
+function colapseMenuOnLoad (){
+    navigation.classList.add('page-navigation--hidden')
 }
 
-window.onresize = hideOrShowNavigation;
+window.onload = colapseMenuOnLoad;
 
 hamburgerIcon.addEventListener('click', () => {
-    navigation.removeAttribute('style');
-    navigation.classList.remove('page-navigation--hidden')
-    pageHeader.style.height = '100vh'
+    if(navigation.className === 'page-navigation') {
+        hamburgerIcon.classList.remove('mobile-button-close');
+        hamburgerIcon.classList.add('mobile-button-hamburger');
+        pageHeader.classList.remove('page-navigation__items--expand');
+        navigation.classList.add('page-navigation--hidden');
+    } else if (!navigation.className !== 'page-navigation') {
+        hamburgerIcon.classList.remove('mobile-button-hamburger');
+        hamburgerIcon.classList.add('mobile-button-close');
+        navigation.classList.remove('page-navigation--hidden');
+        pageHeader.classList.add('page-navigation__items--expand');
+    }
 })
 
 //colapse manu after selecting anchor link
 pageNavigationLink.addEventListener('click', (e)=> {
     if(e.target.tagName === 'A') {
-        // navigation.setAttribute('style', 'display:none;');
         navigation.classList.add('page-navigation--hidden')
     }
 })
+
+function hideOrShowNavigation () {
+    if (window.innerWidth <= 375) {
+        console.log(window.innerWidth);
+        navigation.classList.add('page-navigation--hidden')
+    }
+}
+
+window.onresize = hideOrShowNavigation;
 
 
 // Assignment #2

@@ -225,8 +225,12 @@ Natomiast pozycję tę ustawiamy za pomocą parametrów 'top', 'bottom', 'right'
         background-size: cover;
     }
 
-    .mobile-button {
+    .mobile-button-hamburger {
         background-image: url('./images/hamburger.png');
+    }
+
+    .mobile-button-close {
+        background-image: url('./images/e-remove.png');
     }
 
     .page-navigation {
@@ -237,6 +241,10 @@ Natomiast pozycję tę ustawiamy za pomocą parametrów 'top', 'bottom', 'right'
         text-align: center;
         align-items: stretch;
         width: 100%;
+    }
+
+    .page-navigation__items--expand {
+        height: 100vh;
     }
 
     .page-navigation--hidden{
