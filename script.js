@@ -30,6 +30,8 @@ hamburgerIcon.addEventListener('click', () => {
 pageNavigationLink.addEventListener('click', (e)=> {
     if(e.target.tagName === 'A') {
         navigation.classList.add('page-navigation--hidden')
+        hamburgerIcon.classList.remove('mobile-button-close');
+        hamburgerIcon.classList.add('mobile-button-hamburger');
     }
 })
 

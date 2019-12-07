@@ -243,11 +243,15 @@ Natomiast pozycję tę ustawiamy za pomocą parametrów 'top', 'bottom', 'right'
         width: 100%;
     }
 
+    .page-navigation__items {
+        margin-top: 50%;
+    }
+
     .page-navigation__items--expand {
         height: 100vh;
     }
 
-    .page-navigation--hidden{
+    .page-navigation--hidden {
         display: none;
     }
 
