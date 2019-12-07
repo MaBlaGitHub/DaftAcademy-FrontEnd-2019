@@ -1,3 +1,35 @@
+//Assignment #1 - hamburder menu
+
+// depends on width - hide or show navigation
+const navigation = document.querySelector('.page-navigation');
+const hamburgerIcon = document.querySelector('.mobile-button');
+const pageHeader = document.querySelector('.page-navigation__items');
+const pageNavigationLink = document.querySelector('.page-navigation__items');
+
+function hideOrShowNavigation () {
+    if (window.innerWidth <= 375) {
+        console.log(window.innerWidth);
+        navigation.classList.add('page-navigation--hidden')
+    } else {
+        navigation.removeAttribute('style');
+    }
+}
+
+window.onresize = hideOrShowNavigation;
+
+hamburgerIcon.addEventListener('click', () => {
+    navigation.removeAttribute('style');
+    navigation.classList.remove('page-navigation--hidden')
+    pageHeader.style.height = '100vh'
+})
+
+//colapse manu after selecting anchor link
+pageNavigationLink.addEventListener('click', (e)=> {
+    if(e.target.tagName === 'A') {
+        // navigation.setAttribute('style', 'display:none;');
+        navigation.classList.add('page-navigation--hidden')
+    }
+})
 
 
 // Assignment #2

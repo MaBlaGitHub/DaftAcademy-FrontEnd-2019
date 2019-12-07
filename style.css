@@ -193,18 +193,54 @@ Natomiast pozycję tę ustawiamy za pomocą parametrów 'top', 'bottom', 'right'
 /*media queries - page header*/
 @media (min-width: 320px) and (max-width: 375px) {
     .page-header {
-        position: static;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
-        margin: 30px auto 30px auto;
+        margin: 0;
+        padding: .8rem 0;
+        background-color: rgba(0, 0, 0, .7);
+        z-index: 30;
     }
 
     .page-brand {
         width: 160px;
-        margin: 0 auto;
+        margin-top: 5px;
+        margin-left: 5px;
     }
 
-    .page-navigation__item {
+    .page-brand > img {
+        width: 80px;
+        margin-left: .9rem;
+    }
+
+    .mobile-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 1.1rem;
+        background-size: cover;
+    }
+
+    .mobile-button {
+        background-image: url('./images/hamburger.png');
+    }
+
+    .page-navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-right: 0;
         text-align: center;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .page-navigation--hidden{
+        display: none;
     }
 
     .page-footer {
@@ -415,6 +451,10 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 
 /*media queries - band members section*/
 @media (min-width: 320px) and (max-width: 375px) {
+    #home {
+        margin-top: 80px;
+    }
+
     .band-members {
         display: block;
         width: auto;
@@ -581,7 +621,7 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 /*media queries - about section*/
 @media (min-width: 320px) and (max-width: 375px) {
     #about {
-        margin-top: 720px;
+        margin-top: 680px;
     }
 
     .about {
