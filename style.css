@@ -190,7 +190,7 @@ Natomiast pozycję tę ustawiamy za pomocą parametrów 'top', 'bottom', 'right'
     left: 50px;
 }
 
-/*media queries - page header*/
+/*media queries - hamburger menu for*/
 @media (min-width: 320px) and (max-width: 375px) {
     .page-header {
         display: flex;
@@ -203,8 +203,12 @@ Natomiast pozycję tę ustawiamy za pomocą parametrów 'top', 'bottom', 'right'
         width: 100%;
         margin: 0;
         padding: .8rem 0;
-        background-color: rgba(0, 0, 0, .7);
+        background-color: rgba(37, 7, 46, .7);
         z-index: 30;
+    }
+
+    .page-header--expand {
+        background-color: rgba(37, 7, 46, 1);
     }
 
     .page-brand {
@@ -244,11 +248,17 @@ Natomiast pozycję tę ustawiamy za pomocą parametrów 'top', 'bottom', 'right'
     }
 
     .page-navigation__items {
-        margin-top: 50%;
+        margin-top: 25%;
+    }
+
+    .page-navigation__item {
+        margin-top: 25px;
+        font-size: 15px;
     }
 
     .page-navigation__items--expand {
         height: 100vh;
+        background-color: rgba(37, 7, 46, 1);
     }
 
     .page-navigation--hidden {
@@ -633,7 +643,7 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 /*media queries - about section*/
 @media (min-width: 320px) and (max-width: 375px) {
     #about {
-        margin-top: 680px;
+        margin-top: 710px;
     }
 
     .about {
