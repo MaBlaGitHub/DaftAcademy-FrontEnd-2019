@@ -157,6 +157,10 @@ Natomiast pozycję tę ustawiamy za pomocą parametrów 'top', 'bottom', 'right'
         margin-left: 5px;
     }
 
+    .mobile-button {
+        margin-top: 10px;
+    }
+
     .upper,
     .middle,
     .lower {

@@ -8,7 +8,7 @@ const pageNavigationLink = document.querySelector('.page-navigation__items');
 // change state from hamburger to X
 hamburgerIcon.addEventListener('click', () => {
     hamburgerIcon.classList.toggle('modify')
-})
+});
 
 const showMenu = () => {
     navigation.classList.toggle('page-navigation--hidden');
@@ -36,21 +36,11 @@ const removeCloseMenuIcon = () => {
     hamburgerIcon.classList.remove('mobile-button-close');  
 }
 
-const addHamburgerMenuIcon = () => {
-    hamburgerIcon.classList.add('mobile-button-hamburger');
-}
-
-const removeHamburgerMenuIcon = () => {
-    hamburgerIcon.classList.remove('mobile-button-hamburger');
-}
-
 // colapse menu after page reloads
 const colapseMenuOnLoad = () => {
     hideMenu();
     removeCloseMenuIcon();
-    addHamburgerMenuIcon();
 }
-// window.onload = 
 
 window.addEventListener('load', () => {
     colapseMenuOnLoad();
@@ -62,9 +52,7 @@ hamburgerIcon.addEventListener('click', () => {
         hideMenuItems();
         hideMenu();
         removeCloseMenuIcon();
-        addHamburgerMenuIcon();
     } else if (navigation.className !== 'page-navigation') {
-        removeHamburgerMenuIcon();
         addCloseMenuIcon();
         showMenu();
         showMenuItems();
@@ -80,18 +68,16 @@ pageNavigationLink.addEventListener('click', (e) => {
 })
 
 // Assignment #2
-const buyATicketButton = document.querySelector('.concerts');
+const buyATicketButton = document.querySelectorAll('.concerts__info > button');
 
-buyATicketButton.addEventListener('click', (e) => {
-    if (e.target.className === 'button') {
-        const button = e.target.parentElement;
-        button.children[2].remove()
-        const textElement = document.createElement('p');
-        textElement.classList.add('button--success')
-        textElement.textContent = 'have fun!';
-        button.appendChild(textElement);
-    }
-})
+buyATicketButton.forEach(btn => {
+    btn.addEventListener('click', () => {
+        let textElement = document.createElement('p');
+        textElement.textContent = 'Have fun!';
+        textElement.classList.add('button--success');
+        btn.replaceWith(textElement);
+    });
+});
 
 // Assignment #3
 const form = document.querySelector('.form')
